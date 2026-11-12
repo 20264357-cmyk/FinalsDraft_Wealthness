@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wealthness personal finance dashboard.">
+    <title>Wealthness </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <div class="dashboard">
+
+      
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="brand-logo">W</div>
+                <div>
+                    <h2>Wealthness</h2>
+                    
+                </div>
+            </div>
+
+            <div class="welcome-card">
+                <strong>Welcome back!</strong>
+                <p>Personal account</p>
+            </div>
+
+            <p class="menu-heading">MAIN MENU</p>
+
+            <nav class="navigation" aria-label="Main navigation">
+                <a href="index.html" class="nav-link active">
+                    <span aria-hidden="true">⌂</span> Overview
+                </a>
+                <a href="budget.html" class="nav-link">
+                    <span aria-hidden="true">▤</span> Budget &amp; Expenses
+                </a>
+                <a href="savings.html" class="nav-link">
+                    <span aria-hidden="true">◎</span> Savings Goals
+                </a>
+                <a href="debt.html" class="nav-link">
+                    <span aria-hidden="true">▱</span> Debt Management
+                </a>
+                <a href="guides.html" class="nav-link">
+                    <span aria-hidden="true">▧</span> Financial Guides
+                </a>
+                <a href="settings.html" class="nav-link">
+                    <span aria-hidden="true">⚙</span> Settings
+                </a>
+            </nav>
+        </aside>
+
+     
+        <main class="main-content" id="main-content">
+
+          
+            <header class="topbar">
+                <p>PERSONAL FINANCE / <strong>OVERVIEW</strong></p>
+
+                <div class="top-actions">
+                    <a href="budget.html#transactions" class="search-link">
+                        <span aria-hidden="true">⌕</span>
+                        Search transactions
+                    </a>
+                    <a href="budget.html#add-entry" class="add-button">
+                        + Add Entry
+                    </a>
+                </div>
+            </header>
+
+          
+            <section class="page-intro">
+                <p class="eyebrow">YOUR FINANCIAL DASHBOARD</p>
+                <h1>Good day!</h1>
+                <p>Here's an overview of your financial activity.</p>
+            </section>
+
+        
+            <section class="summary-grid" aria-label="Financial summary">
+
+                <article class="summary-card">
+                    <div class="summary-icon balance-icon" aria-hidden="true">₱</div>
+                    <p>Available Balance</p>
+                    <h2>₱109,900.00</h2>
+                    <small>Income minus expenses</small>
+                </article>
+
+                <article class="summary-card">
+                    <div class="summary-icon income-icon" aria-hidden="true">↗</div>
+                    <p>Monthly Income</p>
+                    <h2>₱115,000.00</h2>
+                    <small>Total income this month</small>
+                </article>
+
+                <article class="summary-card">
+                    <div class="summary-icon spending-icon" aria-hidden="true">↘</div>
+                    <p>Monthly Spending</p>
+                    <h2>₱5,100.00</h2>
+                    <small>Total expenses this month</small>
+                </article>
+
+                <article class="summary-card">
+                    <div class="summary-icon saved-icon" aria-hidden="true">◎</div>
+                    <p>Total Saved</p>
+                    <h2>₱0.00</h2>
+                    <small>Across your savings goals</small>
+                </article>
+
+            </section>
+
+
+            <section class="overview-grid">
+
+
+                <article class="panel cash-flow">
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Cash Flow</h2>
+                            <p>Compare your income and expenses.</p>
+                        </div>
+                        <span>This month</span>
+                    </div>
+
+                    <div class="chart-legend">
+                        <span><i class="legend-income"></i> Income</span>
+                        <span><i class="legend-expense"></i> Expenses</span>
+                    </div>
+
+                    <div class="chart-values">
+                        <strong>₱115,000.00</strong>
+                        <strong>₱5,100.00</strong>
+                    </div>
+
+                    <div class="chart" role="img"
+                         aria-label="Cash flow chart from June to November, comparing monthly income and expenses.">
+                        <div class="chart-group">
+                            <div class="bar-pair">
+                                <div class="bar income-bar" style="height: 3%;"></div>
+                                <div class="bar expense-bar" style="height: 1%;"></div>
+                            </div>
+                            <span>Jun</span>
+                        </div>
+
+                        <div class="chart-group">
+                            <div class="bar-pair">
+                                <div class="bar income-bar" style="height: 3%;"></div>
+                                <div class="bar expense-bar" style="height: 1%;"></div>
+                            </div>
+                            <span>Jul</span>
+                        </div>
+
+                        <div class="chart-group">
+                            <div class="bar-pair">
+                                <div class="bar income-bar" style="height: 3%;"></div>
+                                <div class="bar expense-bar" style="height: 1%;"></div>
+                            </div>
+                            <span>Aug</span>
+                        </div>
+
+                        <div class="chart-group">
+                            <div class="bar-pair">
+                                <div class="bar income-bar" style="height: 3%;"></div>
+                                <div class="bar expense-bar" style="height: 1%;"></div>
+                            </div>
+                            <span>Sep</span>
+                        </div>
+
+                        <div class="chart-group">
+                            <div class="bar-pair">
+                                <div class="bar income-bar" style="height: 3%;"></div>
+                                <div class="bar expense-bar" style="height: 1%;"></div>
+                            </div>
+                            <span>Oct</span>
+                        </div>
+
+                        <div class="chart-group">
+                            <div class="bar-pair">
+                                <div class="bar income-bar" style="height: 100%;"></div>
+                                <div class="bar expense-bar" style="height: 5%;"></div>
+                            </div>
+                            <span>Nov</span>
+                        </div>
+                    </div>
+                </article>
+
+          
+                <article class="panel spending-plan">
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Spending Plan</h2>
+                            <p>Track your monthly budget.</p>
+                        </div>
+                        <a href="budget.html">Manage</a>
+                    </div>
+
+                    <div class="budget-item">
+                        <div class="budget-label">
+                            <strong>Housing</strong>
+                            <span>₱0.00 / ₱4,000.00</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <small>₱4,000.00 remaining</small>
+                    </div>
+
+                    <div class="budget-item">
+                        <div class="budget-label">
+                            <strong>Food</strong>
+                            <span>₱5,100.00 / ₱2,000.00</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill over-budget" style="width: 100%;"></div>
+                        </div>
+                        <small class="over-text">₱3,100.00 over budget</small>
+                    </div>
+
+                    <div class="budget-item">
+                        <div class="budget-label">
+                            <strong>Transportation</strong>
+                            <span>₱0.00 / ₱1,000.00</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <small>₱1,000.00 remaining</small>
+                    </div>
+
+                    <div class="budget-item">
+                        <div class="budget-label">
+                            <strong>Education</strong>
+                            <span>₱0.00 / ₱1,500.00</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <small>₱1,500.00 remaining</small>
+                    </div>
+
+                    <div class="budget-item">
+                        <div class="budget-label">
+                            <strong>Bills</strong>
+                            <span>₱0.00 / ₱1,500.00</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <small>₱1,500.00 remaining</small>
+                    </div>
+
+                    <div class="budget-item">
+                        <div class="budget-label">
+                            <strong>Others</strong>
+                            <span>₱0.00 / ₱1,000.00</span>
+                        </div>
+                        <div class="progress-track">
+                            <div class="progress-fill" style="width: 0%;"></div>
+                        </div>
+                        <small>₱1,000.00 remaining</small>
+                    </div>
+                </article>
+
+             
+                <article class="panel savings-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Savings Goals</h2>
+                            <p>Keep moving toward your targets.</p>
+                        </div>
+                        <a href="savings.html">View all</a>
+                    </div>
+
+                    <div class="empty-state">
+                        <p>Create a savings goal to start tracking your progress.</p>
+                    </div>
+                </article>
+
+            </section>
+
+           
+            <section class="bottom-grid">
+
+             
+                <article class="panel transactions-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h2>Recent Transactions</h2>
+                            <p>Your latest recorded financial activities.</p>
+                        </div>
+                        <a href="budget.html#transactions">View all</a>
+                    </div>
+
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th scope="col">DATE</th>
+                                    <th scope="col">DESCRIPTION</th>
+                                    <th scope="col">CATEGORY</th>
+                                    <th scope="col">AMOUNT</th>
+                                    <th scope="col">ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="5" class="empty-table">
+                                        No transactions yet. Select Add Entry to begin.
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+
+                
+                <article class="panel tip-panel">
+                    <div class="tip-heading">
+                        <div class="summary-icon balance-icon" aria-hidden="true">✦</div>
+                        <div>
+                            <h2>Wealthness Tip</h2>
+                            <p>A little knowledge goes a long way.</p>
+                        </div>
+                    </div>
+
+                    <div class="tip-content">
+                        <strong>Follow a simple budget.</strong>
+                        <p>
+                            Before spending your money, set aside an amount for
+                            your needs, savings, and personal wants. Tracking
+                            where your money goes can help you make better
+                            financial decisions.
+                        </p>
+                        <a href="guides.html">Learn more →</a>
+                    </div>
+                </article>
+
+            </section>
+
+            <footer class="footer">
+                <p>© 2026 Wealthness. All rights reserved.</p>
+            </footer>
+
+        </main>
+    </div>
+</body>
+</html>
